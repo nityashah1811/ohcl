@@ -248,3 +248,30 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* Live scores */
+#scores { padding-bottom: 0; }
+.scores-card {
+  display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
+  background: linear-gradient(135deg, var(--green-800), var(--green-900));
+  color: #fff; border-radius: var(--radius); padding: clamp(28px, 5vw, 48px);
+  box-shadow: var(--shadow);
+}
+.scores-card .eyebrow { color: var(--gold); display: flex; align-items: center; gap: 8px; }
+.scores-card h2 { margin-bottom: 0.3em; }
+.scores-card p:last-child { margin: 0; color: rgba(255,255,255,0.85); max-width: 560px; }
+.scores-actions { display: grid; justify-items: center; gap: 8px; }
+.scores-note { font-size: 0.8rem; color: rgba(255,255,255,0.65); }
+.live-dot {
+  width: 9px; height: 9px; border-radius: 50%; background: var(--red);
+  box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.6); animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  70% { box-shadow: 0 0 0 9px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+@media (max-width: 760px) {
+  .scores-card { grid-template-columns: 1fr; gap: 20px; }
+  .scores-actions { justify-items: start; }
+}
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
