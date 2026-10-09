@@ -11,4 +11,4 @@ Static site for OHCL. No build step: open `index.html` in a browser, or host the
 
 Every push to `main` deploys to GitHub Pages via `.github/workflows/pages.yml`.
 If the first run fails at "Configure Pages", go to **Settings → Pages** and set **Source** to **GitHub Actions**, then re-run the workflow.
-The site will be at https://ntshah28.github.io/OHCLWebsite/
+The site will be at https://nityashah1811.github.io/ohcl/
