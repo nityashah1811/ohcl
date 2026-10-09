@@ -10,4 +10,4 @@ Static site for OHCL. No build step: open `index.html` in a browser, or host the
 ## Deployment
 
 Served by GitHub Pages straight from the `main` branch (Settings → Pages → Source: **Deploy from a branch**, Branch: **main** / **(root)**).
-Every push to `main` updates the site at https://nityashah1811.github.io/ohcl/
+Every push to `main` updates the site at https://oregoncricket.github.io/
